@@ -22,8 +22,8 @@ Ext.define('example1.view.PostForm', {
 				},
 				{
 					xtype: 'textfield',
-					name: 'Body',
-					fieldLabel: 'body'
+					name: 'body',
+					fieldLabel: 'Body'
 				}
 			]
 		}

@@ -3,7 +3,8 @@ Ext.define('example1.view.Viewport', {
     requires:[
         'Ext.layout.container.Fit',
         //'example1.view.Main'
-        'example1.view.PostsGrid'
+        //'example1.view.PostsGrid'
+        'example1.view.MultiSort'
     ],
 
     layout: {
@@ -12,6 +13,7 @@ Ext.define('example1.view.Viewport', {
 
     items: [{
         //xtype: 'app-main'
-        xtype: 'postsgrid'
+        //xtype: 'postsgrid'
+        xtype: 'multisort'
     }]
 });
