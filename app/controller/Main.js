@@ -10,7 +10,8 @@ Ext.define('example1.controller.Main', {
 
     views: [
         "example1.view.PostsGrid",
-    	"example1.view.PostForm"
+    	"example1.view.PostForm",
+        "example1.view.MultiSort"
 
     ],
 
@@ -19,6 +20,9 @@ Ext.define('example1.controller.Main', {
             "postsgrid": {
                 render: this.onGridRender
             },
+            "multisort": {
+                render: this.onMultiRender
+            },
             "postsgrid button#add": {
                 click: this.onAddClick
             }
@@ -26,7 +30,13 @@ Ext.define('example1.controller.Main', {
     },
 
     onGridRender: function(grid, eOpts){
+        //debugger;
         grid.getStore().load();
+    },
+
+    onMultiRender: function(panel, eOpts){
+        debugger;
+        //panel.getStore().load();
     },
 
     onAddClick: function(btn, e, eOpts){
