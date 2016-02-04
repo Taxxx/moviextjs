@@ -34,7 +34,7 @@ Ext.define('example1.controller.Main', {
         grid.getStore().load();
     },
 
-    onMultiRender: function(panel, eOpts){
+    onMultiRender: function(panel, eOpts, tpl, store){
         debugger;
         //panel.getStore().load();
     },

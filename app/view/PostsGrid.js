@@ -3,6 +3,12 @@ Ext.define("example1.view.PostsGrid", {
     alias: 'widget.postsgrid',
     store: 'example1.store.Posts',
     title: 'Posts',
+    config: {
+        layout: {
+            type: 'hbox'
+        }
+    }
+    ,
     columns: [
     	{
     		text: 'ID',
