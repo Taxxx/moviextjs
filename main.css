@@ -1,0 +1,31 @@
+.item{
+	border: 1px solid gray;
+	/*height: 10%;*/
+	width: 15%;
+
+	display: inline-block;
+
+	/*float: left;*/
+	margin: 8px;
+	padding: 8px;
+	overflow: hidden;
+
+	vertical-align: top;	
+
+}
+h3{
+	height: 15px;
+	width: 125px;
+	overflow: hidden;
+}
+body{
+	text-align: center;
+}
+p{
+	height: 60px;
+	overflow: auto;
+}
+
+/*.verde{
+	background: green;
+}*/
