@@ -5,7 +5,8 @@ Ext.define('example1.controller.Main', {
     ],
 
     stores: [
-    	'example1.store.Posts'
+        //'example1.store.Posts'
+    	'example1.store.Movies'
     ],
 
     views: [

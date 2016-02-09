@@ -13,6 +13,22 @@ Ext.define('example1.view.MultiSort', {
 
     items: [{
         xtype: 'dataview',
+        store: 'example1.store.Movies',
+        itemSelector: 'div.dataview-multisort-item',
+        tpl: new Ext.XTemplate(
+                '<tpl for=".">',
+                    '<div class="item">',
+                        '<h3>{title}</h3>',
+                        '<p>{vote_average}</p>',
+                    '</div>',
+                '</tpl>'
+            )
+
+    }]
+
+
+    /*items: [{
+        xtype: 'dataview',
         store: 'example1.store.Posts',
         itemSelector: 'div.dataview-multisort-item',
         tpl: new Ext.XTemplate(
@@ -24,7 +40,7 @@ Ext.define('example1.view.MultiSort', {
                 '</tpl>'
             )
 
-    }]
+    }]*/
 
     //,cls: 'verde'
     
