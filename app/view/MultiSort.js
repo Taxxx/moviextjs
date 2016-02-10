@@ -13,13 +13,13 @@ Ext.define('example1.view.MultiSort', {
 
     items: [{
         xtype: 'dataview',
-        store: 'example1.store.Movies',
+        store: 'example1.store.Posts',
         itemSelector: 'div.dataview-multisort-item',
         tpl: new Ext.XTemplate(
                 '<tpl for=".">',
                     '<div class="item">',
-                        '<h3>{title}</h3>',
-                        '<p>{vote_average}</p>',
+                        '<img src="http://lorempixel.com/150/200/sports">',
+                        '<p><a href="http://wwww.google.com" class="title">{title}</a></p>',
                     '</div>',
                 '</tpl>'
             )

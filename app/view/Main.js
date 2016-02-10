@@ -1,8 +1,13 @@
 Ext.define('example1.view.Main', {
     extend: 'Ext.container.Container',
     requires:[
-        'Ext.tab.Panel',
-        'Ext.layout.container.Border'
+        /*'Ext.tab.Panel',
+        'Ext.layout.container.Border'*/
+
+        'example1.view.MultiSort',
+        'example1.view.Menu'
+
+
     ],
     
     xtype: 'app-main',
@@ -13,14 +18,15 @@ Ext.define('example1.view.Main', {
 
     items: [{
         region: 'west',
-        xtype: 'panel',
-        title: 'west',
+        xtype: 'menu_movie',
+        title: 'Menu',
         width: 150
     },{
         region: 'center',
-        xtype: 'tabpanel',
+        xtype: 'multisort'
+        /*,
         items:[{
             title: 'Center Tab 1'
-        }]
+        }]*/
     }]
 });

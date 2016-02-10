@@ -5,6 +5,7 @@ Ext.define('example1.view.Viewport', {
         //'example1.view.Main'
         'example1.view.PostsGrid',
         'example1.view.MultiSort',
+        'example1.view.Menu',
 
         'Ext.toolbar.TextItem',
         'Ext.view.View',
@@ -17,8 +18,8 @@ Ext.define('example1.view.Viewport', {
     },
 
     items: [{
-        //xtype: 'app-main'
+        xtype: 'app-main'
         //xtype: 'postsgrid'
-        xtype: 'multisort'
+        //xtype: 'multisort'
     }]
 });
